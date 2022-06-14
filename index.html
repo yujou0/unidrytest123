@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂泥科技 地不漏深層導水盤</title>
+    <link rel="icon" href="./image/logo_02.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header header-left  ">
+                <div class="nav-title">
+                    <h1 class=" d-flex justify-content-center"><img class="logo" src="./image/logo.png" alt="UniDry"></h1>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label id="hamberger" for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" href="#section2" target="_self">影片介紹</a>
+                <a class="nav-link" href="#section3" target="_self">產品優勢</a>
+                <a class="nav-link" href="#section4" target="_self">發明專利</a>
+                <a class="nav-link" href="#section5" target="_self">產品比較</a>
+                <a class="nav-link" href="#section7" target="_self">施工流程</a>
+                <a class="nav-link" href="#section8" target="_self">關於樂泥</a>
+                <a class="nav-link" href="#section9" target="_self">購買專區</a>
+                <a class="nav-link" href="#section10" target="_self">聯絡我們</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+<!-- Modal -->
+<div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-0" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-danger font-weight-bold text-center mt-3">
+            您的訂單已經成功送出，感謝您的訂購。
+            <br>
+            <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">確定</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <section class="section1">
+            <div class="container-fluid p-0">
+                <img class="mb-1" src="./image/banner_01.jpg" alt="Second slide">
+                <img src="./image/banner_02.jpg" alt="First slide">
+            </div>
+        </section>
+        <section class="section2" id="section2">
+            <div class="container-fluid p-0">
+                <div class="d-lg-flex flex-column align-items-center justify-content-center ">
+                    <div class="d-flex flex-column align-items-center justify-content-center col-lg-6">
+                        <img class="section2_title" src="./image/t01.png" alt="">
+                    </div>
+                    <div class="d-flex flex-column align-items-center justify-content-center col-lg-8 mt-3">
+                        <iframe src="https://www.youtube.com/embed/Qf7xl5LZFV4?controls=0&amp;start=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3" id="section3">
+            <img src="./image/a01.jpg" alt="">
+        </section>
+        <section class="section4" id="section4">
+            <img src="./image/a02.jpg" alt="">
+        </section>
+        <section class="section5" id="section5">
+            <img class="mb-1" src="./image/a03.jpg" alt="">
+        </section>
+        <section class="section6" id="section6">
+            <img class="mb-1" src="./image/a04.jpg" alt="">
+        </section>
+        <section class="section7" id="section7">
+            <img src="./image/a05.jpg" alt="">
+        </section>
+        <section class="section8" id="section8">
+            <img src="./image/a06.jpg" alt="">
+            <img src="./image/a07.jpg" alt="">
+        </section>
+        <section class="section9 mb-1" id="section9">
+            <div class="container-fluid p-0">
+                <div class="d-lg-flex flex-column align-items-center justify-content-center m-auto left-box">
+                    <div class=" my-lg-5  col-md-12 col-lg-8 payway">
+                        <h4>付款方式</h4>
+                        <h5>線上刷卡</h5>
+                        <p>
+                            使用綠界科技第三方平台系統、<br>
+                            各家銀行的VISA、MasterCard及JCB皆可使用
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href=""><img src="./image/icon_buy.png" alt="">&nbsp;&nbsp;我要購買</a>
+                        </div>
+                        <br><br>
+                        <h5>貨到付款</h5>
+                        <p>
+                            請填寫下方表單，由配送人員收取訂單的金額<br>
+                        </p>
+                        <p class="showtheprice">
+                            深層導水盤售價：&nbsp;<span class="price">380</span>&nbsp;&nbsp;(組)
+                        </p>
+                        <br>
+                    </div>
+                    <div class="d-flex col-12 col-lg-8  my-lg-5 right-box">
+                        <form id="buyform">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="phone">連絡電話</label>
+                            <input type="text" id="phone" name="phone"><br>
+                            <label for="address">地址</label>
+                            <input type="text" id="address" name="address"><br>
+                            <div id="selectblock d-flex">
+                                    <label id="quantitylabel" for="count col-2">購買數量</label>
+                            <input type="number" id="quantity" name="quantity" class="select1">
+                                    <br class="brshowinmobile">
+                                    <label id="sizelabel" class="buysecondlabel" for="size">品名</label>
+                                    <select id="specification" class="select2">
+                                        <option>地不漏深層導水盤</option>
+                                    </select>
+                            </div>
+                            <label for="others" id="othersLabel">備註</label>
+                              <textarea type="text" id="others" name="others"></textarea><br>
+                              <div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld-_6AfAAAAAOt7gRiX6XJccjaa31xHOTugf5Yc"></div>
+                            <br><br>
+                            <div class="d-flex justify-content-end"><button id="my_button">確認送出</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section10" id="section10">
+            <div class="container-fluid p-0">
+                <div class=" d-flex justify-content-around">
+                        <a class="awithlink" target="_blank" href="https://uni-dry.com/">
+                            <img src="./image/h01.png"
+                            alt="樂泥科技">
+                            <img src="./image/h01_h.png"
+                            alt="樂泥科技">
+                            </a>
+                        <a class="awithlink" target="_blank"
+                            href="https://www.facebook.com/groups/521503622636682/"><img src="./image/h02.png"
+                                alt="FB">
+                                <img src="./image/h02_h.png"
+                                alt="FB"></a>
+                        <a class="awithlink" target="_blank" href="https://www.instagram.com/unidrytech/"><img
+                                src="./image/h03.png" alt="IG"><img
+                                src="./image/h03_h.png" alt="IG"></a>
+                        <a class="awithlink" target="_blank" href="https://www.youtube.com/watch?v=Qf7xl5LZFV4"><img
+                                src="./image/h04.png" alt="youtube">
+                                <img
+                                src="./image/h04_h.png" alt="youtube"></a>
+                        <a><img src="./image/h05.png" alt="@688yjcik"></a>
+                        <a><img src="./image/h06.png" alt="line"></a>
+                </div>
+            </div>
+        </section>
+        <div>
+            <a href="#section9" class="btn-buy fix-btns">
+                我要購買
+            </a>
+            <a href="#section10" class="btn-contact fix-btns">
+                聯絡客服
+            </a>
+            <a id="goTop" href="" class="btn-top fix-btns">
+                <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="5 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"
+                        stroke-linejoin="round" points="
+              0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+                </svg>
+            </a>
+        </div>
+    </main>
+    <footer class="d-flex flex-column align-items-center text-white">
+        <div class="d-flex  flex-column justify-content-between">
+            <span><img src="./image/icon_01.png" alt="">&nbsp;台中市北屯區水景街41號</span>
+            <span><img src="./image/icon_02.png" alt="">&nbsp;電話：04-24368500&nbsp;&nbsp;|<br class="brshowinmobile"><span class="servicenumber">&nbsp;&nbsp;客服專線：0956-956-868</span></span>
+            <span><img src="./image/icon_03.png" alt="">&nbsp;unidrytech@gmail.com</span>
+        </div>
+        <hr class="greyline">
+        <p>《樂泥科技 UniDry》版權所有 © 2022</p>
+    </footer>
+    <script crossorigin="anonymous" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" src="https://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+
+let verifySuccess;
+$( '#my_button' ).click(function(){
+  let $captcha = $( '#recaptcha' ),
+      response = grecaptcha.getResponse();
+  if (response.length === 0) verifySuccess = false;
+  else verifySuccess = true;
+})
+        $("#hamberger span").addClass("originspan");
+
+        let hamburgerclicked = false;
+        $("#nav-check").click(function() {
+if(hamburgerclicked == true) hamburgerclicked=false;
+else hamburgerclicked=true;
+
+if(hamburgerclicked){
+        $("#hamberger span").removeClass("originspan");
+  $("#hamberger").addClass("hamberger");
+  $("#hamberger span:nth-child(1)").addClass("hambergerspan1");
+  $("#hamberger span:nth-child(2)").addClass("hambergerspan2");
+  $("#hamberger span:nth-child(3)").addClass("hambergerspan3");
+}else{
+    $("#hamberger span").addClass("originspan");
+  $("#hamberger").removeClass("hamberger");
+  $("#hamberger span:nth-child(1)").removeClass("hambergerspan1");
+  $("#hamberger span:nth-child(2)").removeClass("hambergerspan2");
+  $("#hamberger span:nth-child(3)").removeClass("hambergerspan3"); 
+}
+});
+
+$( "#buyform" ).on( "submit", function( event ) {
+  event.preventDefault();
+
+let name = $("#name").val();
+let phone = $("#phone").val();
+let address = $("#address").val();
+let quantity = $("#quantity").val();
+let specification = $("#specification option:selected").val();
+let others = $("#others").val();
+
+if(name.trim() =="") {alert("請填寫姓名"); return};
+if(phone.trim() =="") {alert("請填寫電話"); return};
+if(address.trim() =="") {alert("請填寫地址"); return};
+if(quantity.trim() =="") {alert("請選擇購買數量"); return};
+
+$ ("#alertModal").modal ('show');
+
+// if(verifySuccess!= true){
+//     alert("請勾選我不是機器人驗證");
+//     return
+// }
+
+// let postdata = {
+//   "clientId": "A0000001",
+//   "clientPassword": "1qazxsw23edc",
+//   "from": "unidrytech@gmail.com",
+//   "to": [
+//     "unidrytech@gmail.com"
+//   ],
+//   "bcc": ["unidrytech@gmail.com",
+//   "rufengdesign@gmail.com"],
+//   "subject": "新訂單通知",
+//   "bodyHtmlContent":`<table style="background-color:white;color:black;width:80%;font-size:30px;border-collapse:collapse; ">
+//   <tbody>
+//     <tr >
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">姓名</td>
+//       <td style="width:370%;border:1px solid grey;">${name}</td>
+//     </tr>
+//     <tr style="background-color:lightgrey;">
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">聯絡電話</td>
+//       <td style="width:70%;border:1px solid grey;">${phone}</td>
+//     </tr>
+//     <tr>
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">地址</td>
+//       <td style="width:70%;border:1px solid grey;">${address}</td>
+//     </tr>
+//     <tr style="background-color:orange;">
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">購買數量</td>
+//       <td style="width:70%;border:1px solid grey;">${quantity}</td>
+//     </tr>
+//         <tr style="background-color:orange;">
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">購買規格</td>
+//       <td style="width:70%;border:1px solid grey;">${specification}</td>
+//     </tr>
+//             <tr>
+//       <td style="width:30%;border:1px solid grey;font-weight:800;">備註</td>
+//       <td style="width:70%;border:1px solid grey;">${others}</td>
+//     </tr>
+//   </tbody>
+// </table>`,
+//   "bodyTextContent": `姓名${name};聯絡電話${phone};地址${address};購買數量${quantity};購買規格${specification};備註${others};`
+// };
+// let successmessage;
+// $.ajax({
+//     type: 'POST',
+//     url: 'http://mail.beedemo.asia/api/MailTransfer',
+//     data: JSON.stringify(postdata), // or JSON.stringify ({name: 'jonas'}),
+//     contentType: "application/json",
+//     dataType: 'json'
+// });
+
+// $ ("#alertModal").modal ('show');
+
+$("#name").val("");
+$("#phone").val("");
+$("#address").val("");
+$("#quantity option:selected").val("");
+$("#specification option:selected").val("");
+$("#others").val("");
+$("#code_input").val("");
+});
+
+
+    </script>
+</body>
+</html>

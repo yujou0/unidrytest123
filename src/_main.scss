@@ -1,0 +1,590 @@
+html,body{
+  overflow-x: hidden;
+  font-family: Calibri, 'SourceHanSansTW';
+}
+a:hover{text-decoration:none;}
+
+h2{
+  font-size: 60px;
+}
+h3{
+  font-size:40px ;
+}
+h4{
+  font-size: 24px;
+  @media only screen and (max-width: 768px)  {
+    font-size: 20px;
+  }
+}
+h5{
+  font-size:22px ;
+}
+h6{
+  font-size:18px;
+}
+p{
+  font-size: 18px;
+  line-height: 30px;
+}
+footer{
+  font-size: 14px;
+  @media only screen and (min-width:400px)  {
+    font-size: 12px;
+  }
+}
+section , footer{
+ @media only screen and (min-width:1200px)  {
+  width: 80%;
+  margin: auto;
+}}
+.nav {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  .logo{
+    width: 100%;
+    @media only screen and (max-width:1200px)  {
+      width: 70%;
+    }
+    @media only screen and (max-width:400px)  {
+      width:60%;
+    }
+  }     
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  float: right;
+  font-size: 18px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 75%;
+  text-align: end;
+  line-height: 20px;
+  @media only screen and (max-width:1600px)  {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center;
+        }
+}
+
+.nav > .nav-links > a {
+  white-space:nowrap;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: $secondary-color-grey;
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 20px;
+  @media only screen and (max-width:1600px)  {
+    padding: 10px;
+        }
+}
+
+.nav > .nav-links > a:hover {
+  color: $secondary-color-orange;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 130px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .nav > .nav-btn > label > span {
+    height: 8px;
+    border-top: 2px solid lightgrey;
+  }
+  .originspan{
+    display: block;
+    width: 25px;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 40%;
+    background-color: rgba(48,44,45,0.9);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 78px;
+    right: 0px;
+    z-index: 99;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  .nav > .nav-links > a:not(:last-child) { 
+    border-bottom: white 1px solid;
+}
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    overflow-y: auto;
+    height: auto;
+  }
+}
+
+.hamberger{
+  position:relative;
+}
+.hambergerspan1{
+  display:none;
+}
+.hambergerspan2{
+  transform:rotate(45deg);
+  position:absolute;
+  top:25px;
+  right:10px;
+  width:30px;
+}
+.hambergerspan3{
+  transform:rotate(135deg);
+  position:absolute;
+  top:20px;
+  right:10px;
+  width:30px;
+}
+.titlepic{
+  @media only screen and (max-width: 768px)  {
+    width: 60%;
+        }
+}
+.section1{
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .carousel-control-prev img,.carousel-control-next img{
+    width: 50px;
+    @media only screen and (max-width: 768px)  {
+      width: 50%;
+      height: auto;
+          }
+  }
+}
+.section2{
+  background-image: url("../image/y_bg.jpg");
+  background-size: cover;
+  padding: 100px 100px;
+  @media only screen and (max-width: 768px)  {
+    padding: 20px;
+        }
+  .section2_title{
+    width: 75%;
+    @media only screen and (max-width: 768px)  {
+      width: 60%;
+          }
+  }
+  .section2_btn{
+    width: 250px;
+    @media only screen and (max-width: 768px)  {
+      width: 200px;
+          }
+    margin-top: 50px;
+    background-image: radial-gradient(circle at top left,#ffbf06 0px, #e44b00 300px);
+    border-radius: 35px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .section2_btn:hover{
+    opacity: 0.8;
+  }
+  iframe{
+    width:100%;
+    height:600px;
+    @media only screen and (max-width: 1500px)  {
+    width:100%;
+    height:300px;
+          }
+    @media only screen and (max-width: 768px)  {
+    width:90%;
+      height:200px;
+          }
+  }
+}
+.showinmobile{
+  display: none;
+  @media only screen and (max-width: 768px)  {
+    display: block;
+        }
+}
+.brshowinmobile{
+  display: none;
+  @media only screen and (max-width: 450px)  {
+    display: block;
+        }
+}
+
+.hideinmobile{
+  display: block;
+  @media only screen and (max-width: 768px)  {
+    display: none;
+        }
+}
+.carousel-indicators li{
+  height: 5px;
+}
+
+
+.section3 ,.section4,.section5,.section6,.section7 ,.section8 {
+  img{
+    width: 100%;
+  }
+}
+
+ 
+.section9{
+  font-size: 30px;
+  line-height: 48px;
+  background-color: $background-color-grey;
+  
+  @media only screen and (max-width: 1000px)  {
+    padding: 50px 0px;
+        }
+color: white;
+  .left-box{
+
+    @media only screen and (max-width: 1500px)  {
+      padding-left: 5%;
+      padding-right: 5%;
+          }
+    @media only screen and (max-width: 768px)  {
+      padding-right: 5%;
+      padding-right: 5%;
+    }
+    h4{
+      color: $secondary-color-orange;
+  font-size: 30px;
+  line-height: 48px;
+  @media only screen and (max-width: 768px)  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+    }
+h5{
+  position: relative;
+  font-size: 30px;
+  line-height: 48px;
+  @media only screen and (max-width: 768px)  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+p{
+  font-size: 30px;
+  line-height: 48px;
+  @media only screen and (max-width: 768px)  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+    a{
+      padding: 5px 20px;
+      background-color: $secondary-color-orange;
+      color: white;
+      @media only screen and (max-width: 768px)  {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    a:hover{
+      background-color: $secondary-color-grey;
+    }
+    .showtheprice{
+      text-align: end;
+    }
+  }
+
+  h5::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 50%;
+    right:0%;
+    background: #666;
+    width: calc(85% - 10px);
+    @media only screen and (max-width: 1500px)  {
+      width: calc(85% - 30px);
+    }
+    @media only screen and (max-width: 768px)  {
+      width: calc(75% - 10px);
+    }
+    @media only screen and (max-width: 350px)  {
+      width: calc(75% - 35px);
+    }
+  }
+  form{
+    width: 100%;
+    label{
+      width: 120px;
+      margin-right: 20px;
+      text-align: justify;
+      text-align-last: justify;
+      @media only screen and (max-width: 768px)  {
+        font-size: 16px;
+        width: 70px;
+        margin: 0;
+        vertical-align: top;
+        padding-bottom: 5px;
+      }
+
+    }
+    #quantitylabel ,#sizelabel{
+      padding-bottom: 0px;
+      padding-top: 5px;
+    }
+    input{
+      color: white;
+      width: calc(100% - 150px);
+      height: 30px;
+      border: 2px solid $secondary-color-grey;
+      background-color:$background-color-grey ;
+      @media only screen and (max-width: 768px)  {
+        width: calc(100% - 100px);
+        font-size: 20px;
+      }
+    }
+
+    .select1 , .select2{
+      color: white;
+      border: 2px solid $secondary-color-grey;
+      background-color:$background-color-grey ;
+    @media only screen and (min-width: 768px)  {
+      width: calc(46% - 130px);
+        }
+        @media only screen and (max-width: 768px)  {
+          font-size: 16px;
+            }
+    }
+.select2{
+      @media only screen and (max-width: 400px)  {
+        width: calc(100% - 100px);
+          }
+          @media only screen and (max-width: 300px)  {
+            width: 55%;
+                }
+    }
+    textarea{
+      color: white;
+      border: 2px solid $secondary-color-grey;
+      background-color:$background-color-grey ;
+      width: calc(100% - 150px);
+      height: 100px;
+      @media only screen and (max-width: 768px)  {
+        width: calc(100% - 100px);
+        font-size: 20px;
+      }
+    }
+    #othersLabel{
+      height: 100px;
+      vertical-align: top;
+    }
+    .check{
+      width: 100px;
+    }    
+    #v_container{
+      width: 175px;
+      display: inline-block;
+      @media only screen and (max-width: 768px)  {
+        width: 120px;
+        height: 25px;
+      }
+    }
+    button{
+      padding: 10px 20px;
+      background-color: $secondary-color-orange;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      @media only screen and (max-width: 768px)  {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    button:hover{
+      background-color: $secondary-color-grey;
+    }
+  }
+  .price{
+    font-size: 50px;
+    color: $secondary-color-red;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+  .brbetweenselect{
+    display: none;
+    @media only screen and (max-width: 1700px)  {
+      display: block;
+    }
+  }
+}
+.section10{
+  background-image:url("../image/bg03.png") ;
+  padding: 50px 20px;
+  img{
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1000px)  {
+    padding: 30px 15px;
+        }
+
+  a{
+    width: 100%;
+    img{
+    width: 90%;
+    }
+  }
+  .awithlink{
+    position: relative;
+    img{
+      position: absolute;
+    }
+  }
+  .awithlink img:last-child{
+    opacity: 0;
+  }
+  .awithlink img:last-child:hover{
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+  }
+}
+.fix-btns{
+  background: rgba(48,44,45,0.8);
+  color: white;
+  position: fixed;
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  @media only screen and (max-width: 768px)  {
+  padding: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.fix-btns:hover{
+  background: $secondary-color-orange;
+  color: white;
+}
+.btn-top {
+  right: 1.2em;
+  bottom: 1.2em;
+  @media only screen and (max-width: 768px)  {
+    bottom: 2.2em;
+    }
+}
+.btn-contact{
+  right: 1.2em;
+  bottom: 11.2em;
+  @media only screen and (max-width: 768px)  {
+    bottom: 10.2em;
+    }
+}
+.btn-buy{
+  right: 1.2em;
+  bottom: 6.2em;
+}
+
+.arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      margin-left: -9px;
+      margin-top: -5px;
+      cursor: pointer;
+    }
+
+.up:hover polyline,
+.up:focus polyline {
+stroke-width: 15;
+}
+
+.up:active polyline {
+stroke-width: 15;
+transition: all 100ms ease-in-out;
+}
+
+// ---------------------------footer------------------------------
+footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $background-color-grey;
+  p{
+    font-size: 16px;
+    color: #626262;
+    line-height: 18px;
+  }
+  span{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+hr.greyline {
+  border: 1px solid $secondary-color-grey;
+  width: 85%;
+}
+.servicenumber{
+@media only screen and (max-width:450px)  {
+    padding-left: 20px;
+  }
+  }
+@media only screen and (max-width: 768px)  {
+  padding: 50px 15px;
+      }
+}
+
+.g-recaptcha{
+  float: right;
+  @media only screen and (max-width: 768px)  {
+    transform: scale(0.77); -webkit-transform: scale(0.77); transform-origin: 0 0; -webkit-transform-origin: 0 0;
+    float: none;
+        }
+        @media only screen and (max-width: 350px)  {
+          transform: scale(0.5); -webkit-transform: scale(0.5); transform-origin:0 0; -webkit-transform-origin:0 0;
+              }
+  }
